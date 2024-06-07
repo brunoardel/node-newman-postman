@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "1d1402c1-84c9-4af1-be90-92700a56a962",
+		"name": "Newman Teste",
+		"description": "Teste do Newman com Node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10853573"
+	},
+	"item": [
+		{
+			"name": "Shuffle",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"console.log('URL:', pm.variables.get('url'));\r",
+							"console.log('DECK_ID:', pm.variables.get('deck_id')); \r",
+							"console.log('COUNT:', pm.variables.get('count'));"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/{{deck_id}}/draw/?count={{count}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"{{deck_id}}",
+						"draw",
+						""
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "{{count}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

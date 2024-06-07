@@ -1,0 +1,27 @@
+{
+	"id": "f63a92b4-c454-4af1-884c-ae118b1fa4c9",
+	"values": [
+		{
+			"key": "url",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "deck_id",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "count",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"name": "Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2024-06-07T01:05:26.835Z",
+	"_postman_exported_using": "Postman/11.1.25"
+}
